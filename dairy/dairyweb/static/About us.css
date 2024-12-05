@@ -1,0 +1,199 @@
+        .main {
+			text-align: center;
+			font-family: "Copperplate";
+		}
+
+		.marq {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+        .dc {
+              border: 1px solid black;
+
+              padding-top: 5px;
+              padding-right: 100px;
+              padding-bottom: 50px;
+              padding-left: 100px;
+            }
+		.geek1 {
+
+			font-size: 36px;
+            font-family: "Copperplate";
+			color: #87CEEB;
+			text-align: center;
+		}
+
+		.geek2 {
+			text-align: center;
+			font-family: "Copperplate";
+		}
+
+		.geek1 {
+
+			font-size: 36px;
+            font-family: "Copperplate";
+			color: #87CEEB;
+			text-align: center;
+		}
+
+    @media only screen and (max-width:973px){
+        .dc{
+
+             border: 1px solid black;
+
+              padding-top: 5px;
+              padding-right: 0;
+              padding-bottom: 50px;
+              padding-left: 0;
+            }
+            }
+
+		*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #0082e6;
+  height: 100px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+
+  font-weight: bold;
+
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  padding: 10px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: blue;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+
+    padding-left: 10px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 828px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    padding-left: 150px;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+ .block-block-28{
+ border: 1px solid #ddd;
+ padding:16px 20px 40px 20px;
+ }
+
+
+ .block-block-29{
+ border: 1px solid #ddd;
+ padding:10px 10px 10px 10px;
+}
+
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  padding:10px 10px 10px 10px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-media a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.social-media a:hover {
+  color: #ccc;
+}
+
+
+p {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}

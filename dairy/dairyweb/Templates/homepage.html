@@ -1,0 +1,278 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+
+
+<link rel="stylesheet" href="{% static 'home.css'%}"/>
+
+<!--==Poppins-Font===========================-->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+ <!--==CSS-Swiper==============================-->
+ <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="glider.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ </head>
+
+</title>
+	<style >
+
+
+
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<div class="dc">
+
+<div class="main">
+
+<nav>
+         <input type="checkbox" id="check">
+
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img style="float:left; padding-left:50px;" class="img" src="{% static 'dairyweb/logo.png' %}">
+      <ul>
+        <li><a class="active" href="/">Home</a></li>
+        <li><a href="/About us">About Us</a></li>
+
+          <li><a href="/contact">Contact</a></li>
+        <li><a href="/products">products</a>
+        </li>
+          <li>
+    <form class="search-form" action="/search" method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+
+
+</li>
+
+
+      </ul>
+    </nav>
+
+
+<marquee behavior="scroll" direction="left">
+	<img src="{% static 'dairyweb/logo.png' %}" width="500" height="150" alt="Natural"/>
+	<img src="https://img.freepik.com/premium-vector/3d-fresh-milk-ad-template_317442-1800.jpg?w=2000" width="500" height="200" alt="Natural" />
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kyTQ0GfOZDZ07xPVY8H48EremUU-ORTdTg&usqp=CAU" width="500" height="200" alt="Natural" />
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXwif6I8ceRmjQr09-Xhz9JPH_O3qMtaiVA&usqp=CAU" width="500" height="200" alt="Natural" />
+	<img src="https://stock.intellemo.com/6315aefaa2435e2936f07127/6315aefba2435e2936f07128-v252/lassi_for_food_lovers_ad_l.jpg" width="500" height="200" alt="Natural" />
+
+</marquee>
+    </div>
+</div>
+
+
+
+    <div>
+      <h2 class="geek1">About us</h2>
+    </div>
+
+
+
+
+<div class="content">
+    <p style="float:right; padding:0px 15px 0px 50px; margin-top:-1px;"><a href="/About us"><img src="{% static 'dairyweb/years of surbhi.png' %}" /></a></p>
+<p style="font-family:Helvetica; padding-left:20px;">At the forefront of Surbhi Dairy is the exceptional and visionary figure, Prof. S. G. Mane. As the founder and driving force behind this remarkable enterprise, Prof. Mane embodies the essence of a true trailblazer. With a spirit fueled by passion and an unwavering commitment to excellence, he has established Surbhi Dairy as a paragon of innovation and quality in the dairy industry. Prof. Mane's journey began with an insatiable desire to revolutionize the way dairy products are produced and consumed. Inspired by a profound reverence for nature and a deep-rooted respect for traditional farming practices, he embarked on a quest to create a harmonious blend of tradition and technology. Under his astute leadership, Surbhi Dairy has emerged as a beacon of sustainability, championing eco-conscious practices that prioritize the welfare of animals and the preservation of the environment.
+<a href="/About us" >Read more &gt;&gt;</a></p>
+  </div>
+    </div>
+
+</p>
+
+
+
+
+
+
+    <div >
+      <h2 class="geek1">Our best seller's</h2>
+    </div>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="carousel carousel-showmanymoveone slide" id="itemslider">
+        <div class="carousel-inner">
+
+
+          <div class="item active">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="{% static 'dairyweb/amrakhand.png' %}" class="img-responsive center-block"></a>
+              <h4 class="text-center">Surbhi Amrakhand</h4>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="{% static 'dairyweb/Dshreekhand.png' %}" class="img-responsive center-block"></a>
+              <h4 class="text-center">Surbhi Dryfruit Shreekhand</h4>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="{% static 'dairyweb/bshreekhand.png' %}" class="img-responsive center-block"></a>
+              <h4 class="text-center">Surbhi Butterschoch Shreekhand</h4>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="/milk"><img src="{% static 'dairyweb/milk.png' %}" class="img-responsive center-block"></a>
+              <h4 class="text-center">Surbhi Milk</h4>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="#"><img src="{% static 'dairyweb/ghee.png' %}" class="img-responsive center-block"></a>
+              <h4 class="text-center">Surbhi Ghee</h4>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-xs-12 col-sm-6 col-md-2">
+              <a href="malai dahi"><img src="{% static 'dairyweb/malai Dahi.png' %}" class="img-responsive center-block"></a>
+              <h4 class="text-center">Surbhi Malai Dahi</h4>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+<p>&nbsp;</p>
+
+
+            <div>
+      <h2 class="geek1">What We do</h2>
+    </div>
+
+
+  <div class="grid-container">
+    <div class="grid-item">
+        <a href="/Noh"> <img src="{% static 'dairyweb/injection.jpg' %}" alt="Image 1"></a>
+        <div class="description">No Harmone injection given to animals</div>
+    </div>
+    <div class="grid-item">
+        <a href="/fof"><img src="{% static 'dairyweb/grass.jpg' %}" alt="Image 2"></a>
+        <div class="description">Fodder for animals grown at farm</div>
+    </div>
+    <div class="grid-item">
+        <a href="/PB"><img src="{% static 'dairyweb/cow2.jpg' %}" alt="Image 3"></a>
+        <div class="description">Pure-Breed Animals - Ensuring Quality and Genetic Integrity</div>
+    </div>
+       <div class="grid-item">
+           <a href="/AN"><img src="{% static 'dairyweb/stetoscope.jpg' %}" alt="Image 3"></a>
+        <div class="description">Animal Health</div>
+    </div>
+       <div class="grid-item">
+           <a href="/About us"><img src="{% static 'dairyweb/machine.jpg' %}" alt="Image 3"></a>
+        <div class="description">Advance Machines</div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+             <footer>
+  <div class="footer-container" style="text-align:center;">
+    <div class="social-media">
+      <a href="mailto:shindetanmay22@gmail.com"><img src="{% static 'dairyweb/mail.png'%}" style="padding:10px 10px 10px 10px;"></a>
+      <a href="https://www.facebook.com/"><img src="{% static 'dairyweb/facebook.png'%}" style="padding:10px 10px 10px 10px;"></a>
+      <a href="https://www.instagram.com/"><img src="{% static 'dairyweb/instagram.png'%}" style="padding:10px 10px 10px 10px;"></a>
+    </div>
+    <p style="text-align: center;">&copy; 2023 Surbhi Dairy. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+<script>
+$(document).ready(function(){
+
+$('#itemslider').carousel({ interval: 3000 });
+
+$('.carousel-showmanymoveone .item').each(function(){
+var itemToClone = $(this);
+
+for (var i=1;i<6;i++) {
+itemToClone = itemToClone.next();
+
+if (!itemToClone.length) {
+itemToClone = $(this).siblings(':first');
+}
+
+itemToClone.children(':first-child').clone()
+.addClass("cloneditem-"+(i))
+.appendTo($(this));
+}
+});
+});
+</script>
+
+
+
+</body>
+
+</html>
+

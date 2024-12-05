@@ -1,0 +1,208 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Milk</title>
+    <link rel="stylesheet" href="{% static 'home.css'%}">
+
+
+    <style>
+        table {
+      border-collapse: collapse;
+      }
+th, td {
+      border: 1px solid black;
+      padding: 8px;
+       }
+
+
+       .product-image-container {
+  max-width: 100%; /* Ensure the container doesn't exceed its parent width */
+  max-height: 100%; /* Ensure the container doesn't exceed its parent height */
+  display: flex;
+  border: 1px solid #000000;
+ padding:10px 10px 10px 10px;
+
+}
+
+.product-image {
+  max-width: 300px; /* The image will not exceed its parent container */
+  max-height: 250px; /* The image will not exceed its parent container */
+  height: auto; /* Maintain the image's aspect ratio */
+  width: auto; /* Maintain the image's aspect ratio */
+}
+    </style>
+</head>
+<body>
+
+
+
+
+	<div class="dc">
+<div class="block-block-29">
+<div class="main">
+
+<nav>
+         <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img style="float:left; padding-left:50px;" class="img" src="{% static 'dairyweb/logo.png' %}">
+      <ul>
+        <li><a  href="/">Home</a></li>
+        <li><a href="/About us">About Us</a></li>
+
+          <li><a href="/contact">Contact</a></li>
+        <li><a href="products">products</a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+<marquee behavior="scroll" direction="left">
+	<img src="{% static 'dairyweb/logo.png' %}" width="500" height="150" alt="Natural"/>
+	<img src="https://img.freepik.com/premium-vector/3d-fresh-milk-ad-template_317442-1800.jpg?w=2000" width="500" height="200" alt="Natural" />
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6kyTQ0GfOZDZ07xPVY8H48EremUU-ORTdTg&usqp=CAU" width="500" height="200" alt="Natural" />
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShXwif6I8ceRmjQr09-Xhz9JPH_O3qMtaiVA&usqp=CAU" width="500" height="200" alt="Natural" />
+	<img src="https://stock.intellemo.com/6315aefaa2435e2936f07127/6315aefba2435e2936f07128-v252/lassi_for_food_lovers_ad_l.jpg" width="500" height="200" alt="Natural" />
+
+</marquee>
+    </div>
+
+
+
+
+
+<div class="block-block-28">
+    <h2>Nutritional Information "Surbhi Milk"</h2>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<div style="padding:10px 10px 1px 10px; margin-top:-1px; ">
+<div class="product-image-container" style="float:right;">
+  <img  class="product-image" src="{% static 'dairyweb/milkdb.png'%}" >
+</div>
+    </div>
+
+
+
+    <div style="padding:-1px 50px 10px 10px; margin-top:-1px;">
+<div class="product-image-container" style="float:right;">
+  <img  class="product-image" src="{% static 'dairyweb/milkd.png'%}" >
+</div>
+    </div>
+
+
+
+
+
+
+    <table style="  padding:25px 0px 0px 15px; margin-top:-1px;">
+        <tr>
+            <th>Nutrient</th>
+            <th>Value per 100ml</th>
+            <th>% per 100ml</th>
+        </tr>
+        <tr>
+            <td>Protein (g)</td>
+            <td contenteditable="false" id="protein1">3.28</td>
+            <td id="percentProtein"></td>
+        </tr>
+        <tr>
+            <td>Carbohydrates (g)</td>
+            <td contenteditable="false" id="carbs1">6.00</td>
+            <td id="percentCarbs"></td>
+        </tr>
+        <tr>
+            <td>Fats (g)</td>
+            <td contenteditable="false" id="fats1">4.10</td>
+            <td id="percentFats"></td>
+        </tr>
+         <tr>
+            <td>Calcium (mg)</td>
+            <td contenteditable="false" id="calcium1">141.00</td>
+            <td id="percentCalcium"></td>
+        </tr>
+        <tr>
+            <td>Iron (mg)</td>
+            <td contenteditable="false" id="iron1">0.18</td>
+            <td id="percentIron"></td>
+        </tr>
+        <tr>
+            <td>Energy (kcal)</td>
+            <td contenteditable="false" id="energy1">86.10</td>
+            <td id="percentEnergy"></td>
+        </tr>
+
+    </table>
+
+
+
+</div>
+
+
+
+
+
+<p>&nbsp;</p>
+
+
+
+
+<footer>
+
+  <div class="footer-container" style="text-align: center;">
+    <div class="social-media">
+      <a href="mailto:shindetanmay22@gmail.com"><img src="{% static 'dairyweb/mail.png'%}" style="padding:20px 10px 10px 10px;"></a>
+      <a href="https://www.facebook.com/"><img src="{% static 'dairyweb/facebook.png'%}" style="padding:10px 10px 10px 10px;"></a>
+      <a href="https://www.instagram.com/"><img src="{% static 'dairyweb/instagram.png'%}" style="padding:10px 10px 10px 10px;"></a>
+    </div>
+    <p style="text-align: center;">&copy; 2023 Surbhi Dairy. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+</div>
+
+
+        </div>
+
+
+
+ <script>
+         function calculatePercent() {
+            var protein1 = parseFloat(document.getElementById("protein1").textContent);
+            var carbs1 = parseFloat(document.getElementById("carbs1").textContent);
+            var fats1 = parseFloat(document.getElementById("fats1").textContent);
+            var calcium1 = parseFloat(document.getElementById("calcium1").textContent);
+            var iron1 = parseFloat(document.getElementById("iron1").textContent);
+            var energy1 = parseFloat(document.getElementById("energy1").textContent);
+
+            var totalVolume = 100; // Assuming the total volume is 100ml
+
+            var percentProtein1 = (protein1 / totalVolume) * 100;
+            var percentCarbs1 = (carbs1 / totalVolume) * 100;
+            var percentFats1 = (fats1 / totalVolume) * 100;
+            var percentCalcium1 = (calcium1 / totalVolume) * 100;
+            var percentIron1 = (iron1 / totalVolume) * 100;
+            var percentEnergy1 = (energy1 / totalVolume) * 100;
+
+            document.getElementById("percentProtein").textContent = percentProtein1.toFixed(2) + "%";
+            document.getElementById("percentCarbs").textContent = percentCarbs1.toFixed(2) + "%";
+            document.getElementById("percentFats").textContent = percentFats1.toFixed(2) + "%";
+            document.getElementById("percentCalcium").textContent = percentCalcium1.toFixed(2) + "%";
+            document.getElementById("percentIron").textContent = percentIron1.toFixed(2) + "%";
+            document.getElementById("percentEnergy").textContent = percentEnergy1.toFixed(2) + "%";
+        }
+
+        calculatePercent(); // Calculate the percentages on page load
+    </script>
+</body>
+
+
+</body>
+</html>
